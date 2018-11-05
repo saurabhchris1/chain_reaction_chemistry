@@ -2,7 +2,9 @@ This homework assumes and extends the definitions made in the previous quiz on d
 Put all code in a single module named react (i.e., a file named react.py). It should include a self-test that demonstrates the basic features of the module.
 If you attempt any designated extra credit, note that you are doing so in a README.txt file included in the tarball.
 Remember a guiding principle of software development: “DRY” (Don’t Repeat Yourself). Redundant code will lose points.
+
 **1. [ 40 points ] Create a class called Reaction. This class is created with a left-hand side and a right-hand side, both specified by tuples containing one or more Particles (including Nucleuses). The reaction taking place transforms the particles on the left- hand side to the particles on the right hand side.**
+
 Include two exceptions, UnbalancedCharge and UnbalancedNumber to be invoked as follows. When a reaction is created, your system checks two conservation rules, one for charge and one for mass number:
 - The sums of the charges on the left and right hand sides must be equal. If the chargesumsarenotequal,yourcodeshould“raise UnbalancedCharge(diff),” where diff is the (int) difference in charges.
 - The sums of the mass numbers on the left and right hand sides must be equal. If the mass number sums are not equal, your code should “raise UnbalancedNumber(diff),” where diff is the (int) difference in mass numbers.
